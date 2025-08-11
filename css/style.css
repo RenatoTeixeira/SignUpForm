@@ -5,3 +5,86 @@
 #74a892
 #008585
 */
+
+* {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  width: 30vw;
+  background-image: url("../img/background.png");
+  background-size: 100% 100%;
+}
+
+.mainbody {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #74a892;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  height: 500px;
+  width: 500px;
+  background-color: #fbf2c4;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+.user,
+.contact,
+.password,
+.signupbutton {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 400px;
+}
+
+.signin {
+  display: flex;
+  justify-content: center;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px;
+  padding: 5px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.signupbutton {
+  margin: 30px auto;
+}
