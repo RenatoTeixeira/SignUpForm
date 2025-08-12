@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  background-color: #74a892;
+  background: linear-gradient(#74a892, #fbf2c4);
 }
 
 .headings {
@@ -42,19 +42,20 @@
 
 h1 {
   margin: 10px;
+  color: antiquewhite;
 }
 
 .form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-self: center;
   height: 500px;
   width: 500px;
   background-color: #fbf2c4;
   border-radius: 20%;
-  padding: 5px;
+  padding: 15px;
 }
 
 .user,
@@ -62,8 +63,10 @@ h1 {
 .password,
 .signupbutton {
   display: flex;
-  flex-direction: row;
-  flex: 0 1 400px;
+}
+
+.user {
+  margin-top: 35px;
 }
 
 .signin {
@@ -79,12 +82,58 @@ input {
   padding: 5px;
 }
 
+label {
+  text-align: center;
+  color: #008585;
+  font-weight: bolder;
+}
+
+input {
+  border-radius: 5%;
+  border-style: none;
+}
+
+input:valid {
+  border: 2px solid #008585;
+}
+
+input:invalid {
+  border: 2px solid #c7522a;
+}
+
 h1,
 h2,
 h3 {
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+.headings p {
+  text-align: center;
+  color: wheat;
+}
+
+.signin p {
+  text-align: center;
+  color: grey;
+}
+
 .signupbutton {
-  margin: 30px auto;
+  margin: 15px auto 35px auto;
+  background-color: #008585;
+  color: antiquewhite;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 20%;
+  border-style: none;
+}
+
+.signupbutton:hover {
+  background-color: #74a892;
+}
+.signupbutton:active {
+  background-color: darkcyan;
 }
