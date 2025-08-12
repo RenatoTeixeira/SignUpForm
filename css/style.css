@@ -6,6 +6,13 @@
 #008585
 */
 
+@font-face {
+  font-family: "Playwrite";
+  src:
+    local("Playwrite"),
+    url("../fonts/PlaywriteAUQLD-Regular.woff2") format("woff2");
+}
+
 * {
   margin: 0px;
 }
@@ -24,25 +31,35 @@
   background-size: 100% 100%;
 }
 
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #74a892aa;
+  height: 200px;
+  width: 100%;
+}
+
 .mainbody {
   display: flex;
   width: 70vw;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   background: linear-gradient(#74a892, #fbf2c4);
 }
 
 .headings {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 200px;
+  height: 30px;
+  margin: 0px 50px;
 }
 
 h1 {
-  margin: 10px;
+  margin: 5px;
+  padding: 5px;
   color: antiquewhite;
+  font-family: "Playwrite", sans-serif;
+  font-weight: bolder;
 }
 
 .form {
@@ -53,9 +70,10 @@ h1 {
   align-self: center;
   height: 500px;
   width: 500px;
-  background-color: #fbf2c4;
+  background: linear-gradient(#e5c185, #fbf2c4);
   border-radius: 20%;
   padding: 15px;
+  border: 1px solid #74a892;
 }
 
 .user,
@@ -80,6 +98,7 @@ input {
   flex-direction: column;
   margin: 5px 5px;
   padding: 5px;
+  outline: none;
 }
 
 label {
@@ -101,6 +120,10 @@ input:invalid {
   border: 2px solid #c7522a;
 }
 
+input:focus {
+  box-shadow: 2px 2px 2px #008585;
+}
+
 h1,
 h2,
 h3 {
@@ -111,9 +134,18 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  margin-top: 25px;
+  color: #fbf2c4;
+  font-family: "Playwrite", sans-serif;
+  font-size: 1.4rem;
+}
+
 .headings p {
   text-align: center;
   color: wheat;
+  font-family: "Playwrite", sans-serif;
+  font-size: 1.2rem;
 }
 
 .signin p {
@@ -123,16 +155,17 @@ h1 {
 
 .signupbutton {
   margin: 15px auto 35px auto;
-  background-color: #008585;
-  color: antiquewhite;
+  background-color: #74a892;
+  color: white;
   font-size: 0.8em;
   font-weight: 600;
-  border-radius: 20%;
+  border-radius: 2%;
   border-style: none;
+  width: 40%;
 }
 
 .signupbutton:hover {
-  background-color: #74a892;
+  background-color: #008585;
 }
 .signupbutton:active {
   background-color: darkcyan;
